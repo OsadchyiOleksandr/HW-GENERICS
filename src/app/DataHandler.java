@@ -9,7 +9,7 @@ public class DataHandler {
         StringBuilder sb = new StringBuilder();
         int count = 0;
         // Цикл обробки масиву узагальненого типу
-        for (Object item : items) {
+        for (T item : items) {
             count++;
             sb.append(String.format("(%d) %s ", count, item));
         }
